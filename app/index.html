@@ -1,22 +1,38 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" ng-app="boom">
 <head>
 	<title>BigBigBoom</title>
-	<link rel="stylesheet" url="css/bootstrap.min.css">
-	<link rel="stylesheet" url="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" url="css/jquery.sidr.dark.css">
-	<link rel="stylesheet" url="css/jquery.sidr.light.css">
-	<link rel="stylesheet" url="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+	<link rel="stylesheet" href="css/jquery.sidr.light.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/angular.js"></script>
 
 </head>
 <body>
-	<header>
+	<div class="header">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="http://www.welomo.com" alt="印美图">bigbigboom</a>
+				<a id="simple-menu" class="navbar-brand" href="#sidr" alt="">BigBigBoom</a>
 			</div>
 		</nav>	
-	</header>
+	</div>
+
+	<div class="container main">
+		<div id="sidr">
+			<div class="user">
+				<span class="label-info">Knife</span>
+			</div>
+			<ul>
+				<li><a href="#/a" class="imenu">List 1</a></li>
+				<li class="active imenu"><a href="#/b">List 2</a></li>
+				<li><a href="#/c" class="imenu">List 3</a></li>
+			</ul>
+		</div>
+		<div class="main-content" ng-view>
+		</div>
+	</div>
 
 	<footer>
 
@@ -24,5 +40,8 @@
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.sidr.min.js"></script>
+	
+	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

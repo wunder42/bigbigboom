@@ -1,3 +1,15 @@
 body {
-	padding-bottom: 70px;
+	padding-top: 60px;
+}
+
+.navbar-default {
+	border-color: rgb(102, 140, 143);
+}
+
+.main {
+
+}
+
+#sidr {
+	margin-top: 51px;
 }
